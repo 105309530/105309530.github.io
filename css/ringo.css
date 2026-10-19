@@ -854,20 +854,6 @@ img.alignright {
   padding: 0;
   outline: none;
 }
-.hljs {
-  padding: 10px;
-  background: #fafafa !important;
-  font-family: "Fira Mono", "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace !important;
-}
-pre {
-  padding-left: 40px;
-  padding-right: 40px;
-  background: #fafafa;
-  font-size: 80%;
-  margin-left: -40px;
-  margin-right: -40px;
-  max-height: none;
-}
 .post-content img {
   display: block;
   margin: auto;
@@ -882,7 +868,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0 !important;
-/* box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08); */
 }
 table th,
 table td {
@@ -898,6 +883,255 @@ table tr {
 }
 table tr:hover {
   background: #eee;
+}
+figure.highlight {
+  margin: 20px 0 !important;
+  padding: 0 !important;
+  background: #f4f4f4 !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  color: #242424;
+  overflow: hidden;
+}
+figure.highlight .codex-toolbar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 46px;
+  padding: 8px 16px;
+  background: transparent;
+}
+figure.highlight .codex-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  font-family: Arial, "PingFang SC", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #252525;
+}
+figure.highlight .codex-label span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+figure.highlight .codex-label svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+figure.highlight .codex-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+figure.highlight .codex-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #4b4b4b;
+  cursor: pointer;
+  box-shadow: none;
+  font: inherit;
+}
+figure.highlight .codex-btn svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+figure.highlight .codex-btn:hover,
+figure.highlight .codex-btn[aria-pressed="true"] {
+  background: #e5e5e5;
+  color: #111;
+}
+figure.highlight .codex-btn:focus-visible {
+  outline: 2px solid #777;
+  outline-offset: 2px;
+}
+figure.highlight table {
+  width: 100% !important;
+  table-layout: fixed !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+figure.highlight tr,
+figure.highlight tr:hover,
+figure.highlight td {
+  border: none !important;
+  background: transparent !important;
+  transition: none !important;
+}
+figure.highlight td.gutter {
+  display: none !important;
+}
+figure.highlight td.code {
+  box-sizing: border-box;
+  width: 100% !important;
+  min-width: 0;
+  padding: 6px 20px 18px !important;
+  line-height: normal !important;
+  vertical-align: top;
+}
+figure.highlight pre {
+  display: block;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #242424 !important;
+  font-family: "Cascadia Code", Consolas, "JetBrains Mono", Menlo, monospace !important;
+  font-size: 13px !important;
+  font-weight: 400;
+  line-height: 1.9 !important;
+  white-space: pre !important;
+  tab-size: 4;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+figure.highlight code,
+figure.highlight .hljs {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: inherit;
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+figure.highlight.codex-wrap pre {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere;
+}
+figure.highlight pre::-webkit-scrollbar {
+  height: 6px;
+}
+figure.highlight pre::-webkit-scrollbar-thumb {
+  background: #c2c2c2;
+  border-radius: 6px;
+}
+figure.highlight .built_in,
+figure.highlight .title.function_,
+figure.highlight .function .title,
+figure.highlight .hljs-built_in {
+  color: #b65430 !important;
+}
+figure.highlight .string,
+figure.highlight .attr,
+figure.highlight .hljs-string {
+  color: #278341 !important;
+}
+figure.highlight .keyword,
+figure.highlight .selector-tag,
+figure.highlight .hljs-keyword {
+  color: #8250aa !important;
+}
+figure.highlight .comment,
+figure.highlight .hljs-comment {
+  color: #7a7a7a !important;
+  font-style: italic;
+}
+figure.highlight .number,
+figure.highlight .literal,
+figure.highlight .hljs-number {
+  color: #0969da !important;
+}
+figure.highlight .type,
+figure.highlight .class .title {
+  color: #267f99 !important;
+}
+@media (prefers-color-scheme: dark) {
+  figure.highlight {
+    background: #212121 !important;
+    color: #ececec;
+  }
+  figure.highlight .codex-label {
+    color: #ececec;
+  }
+  figure.highlight .codex-btn {
+    color: #c0c0c0;
+  }
+  figure.highlight .codex-btn:hover,
+  figure.highlight .codex-btn[aria-pressed="true"] {
+    background: #383838;
+    color: #fff;
+  }
+  figure.highlight pre {
+    color: #ececec !important;
+  }
+  figure.highlight .built_in,
+  figure.highlight .title.function_,
+  figure.highlight .function .title,
+  figure.highlight .hljs-built_in {
+    color: #d19a66 !important;
+  }
+  figure.highlight .string,
+  figure.highlight .attr,
+  figure.highlight .hljs-string {
+    color: #98c379 !important;
+  }
+  figure.highlight .keyword,
+  figure.highlight .selector-tag,
+  figure.highlight .hljs-keyword {
+    color: #c678dd !important;
+  }
+  figure.highlight .comment,
+  figure.highlight .hljs-comment {
+    color: #929292 !important;
+  }
+  figure.highlight .number,
+  figure.highlight .literal,
+  figure.highlight .hljs-number {
+    color: #d19a66 !important;
+  }
+  figure.highlight .type,
+  figure.highlight .class .title {
+    color: #56b6c2 !important;
+  }
+  figure.highlight pre::-webkit-scrollbar-thumb {
+    background: #5b5b5b;
+  }
+}
+@media (max-width: 600px) {
+  figure.highlight .codex-toolbar {
+    padding: 8px 12px;
+  }
+  figure.highlight td.code {
+    padding: 6px 12px 14px !important;
+  }
+  figure.highlight pre {
+    font-size: 12px !important;
+  }
 }
 .link-container {
   padding: 0.4rem 0;
